@@ -10,3 +10,14 @@ all_colors = [
 
 #Your code go here:
 
+def filter_colors(lista):
+	filtered = list(filter(lambda col: col["sexy"] == True, lista))
+	return(filtered)
+
+colores_filtrados = filter_colors(all_colors)
+
+def generate_li(lst):
+    name_list = list(map(lambda col: "<li>" + col["label"] + "</li>", lst))
+    print(name_list)
+    
+generate_li(colores_filtrados)

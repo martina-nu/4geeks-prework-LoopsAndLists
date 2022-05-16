@@ -7,3 +7,5 @@ names = ['Liam','Emma','Noah','Olivia','William','Ava','James','Isabella','Logan
 
 
 #Your code go here:
+substring = list(filter(lambda nam: 'am' in nam, names))
+print(substring)

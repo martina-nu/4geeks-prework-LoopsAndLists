@@ -13,3 +13,6 @@ tasks = [
 
 #Your code go here:
 
+new_list = list(filter(lambda val:  val["done"] == True, tasks))
+print(new_list)
+
